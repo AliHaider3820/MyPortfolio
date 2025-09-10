@@ -1,12 +1,12 @@
 import { motion } from 'framer-motion';
-import { FaCode, FaServer, FaMobile, FaDatabase, FaArrowRight } from 'react-icons/fa';
+import { FaCode, FaMobile, FaDatabase, FaArrowRight, FaFigma } from 'react-icons/fa';
 import './About.css';
 
 const About = () => {
   const skills = [
     { name: 'Frontend Development', icon: <FaCode className="text-3xl mb-4" />, description: 'Building responsive and interactive user interfaces with React, HTML5, CSS3, and modern JavaScript.' },
-    { name: 'Backend Development', icon: <FaServer className="text-3xl mb-4" />, description: 'Creating robust server-side applications using Node.js, Express, and various databases.' },
-    { name: 'Mobile Development', icon: <FaMobile className="text-3xl mb-4" />, description: 'Developing cross-platform mobile applications with React Native and Flutter.' },
+    { name: 'Graphic Desinging', icon: <FaFigma className="text-3xl mb-4" />, description: 'Creating beautiful and functional user interfaces with Figma.' },
+    { name: 'Mobile App Desing', icon: <FaMobile className="text-3xl mb-4" />, description: 'Creating attractive mobile applications desing.' },
     { name: 'Database Management', icon: <FaDatabase className="text-3xl mb-4" />, description: 'Designing and managing databases including MongoDB, MySQL, and Firebase.' },
   ];
 
@@ -124,23 +124,6 @@ const About = () => {
               </a>
             </motion.div>
           </motion.div>
-          
-          {/* <motion.div 
-            className="about-image-container"
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-          >
-            <div className="about-image-wrapper">
-              <img 
-                src="/path-to-your-image.jpg" 
-                alt="About Me" 
-                className="about-image"
-              />
-              <div className="about-image-overlay"></div>
-            </div>
-          </motion.div> */}
         </div>
       </div>
     </section>
