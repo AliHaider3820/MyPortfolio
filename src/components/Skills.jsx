@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { 
-  FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaJs, FaGitAlt, FaGithub,
-  FaNpm, FaBootstrap, FaSass, FaFigma, FaDatabase
+  FaReact, FaHtml5, FaCss3Alt, FaJs, FaGitAlt, FaGithub,
+  FaNpm, FaBootstrap, FaFigma
 } from 'react-icons/fa';
-import { SiTypescript, SiMongodb, SiExpress, SiTailwindcss, SiRedux, SiJest } from 'react-icons/si';
+import { SiTypescript, SiTailwindcss, SiRedux, SiJest } from 'react-icons/si';
 import './Skills.css';
 
 const skills = [
@@ -14,13 +14,8 @@ const skills = [
   { name: 'TypeScript', icon: <SiTypescript className="skill-icon" />, level: '75%', category: 'frontend' },
   { name: 'React', icon: <FaReact className="skill-icon" />, level: '85%', category: 'frontend' },
   { name: 'Redux', icon: <SiRedux className="skill-icon" />, level: '75%', category: 'frontend' },
-  { name: 'CSS', icon: <SiTailwindcss className="skill-icon" />, level: '80%', category: 'frontend' },
+  { name: 'Tailwind', icon: <SiTailwindcss className="skill-icon" />, level: '80%', category: 'frontend' },
   { name: 'Bootstrap', icon: <FaBootstrap className="skill-icon" />, level: '85%', category: 'frontend' },
-  { name: 'Sass', icon: <FaSass className="skill-icon" />, level: '80%', category: 'frontend' },
-  { name: 'Node.js', icon: <FaNodeJs className="skill-icon" />, level: '80%', category: 'backend' },
-  { name: 'Express', icon: <SiExpress className="skill-icon" />, level: '80%', category: 'backend' },
-  { name: 'MongoDB', icon: <SiMongodb className="skill-icon" />, level: '75%', category: 'backend' },
-  { name: 'SQL', icon: <FaDatabase className="skill-icon" />, level: '70%', category: 'backend' },
   { name: 'Git', icon: <FaGitAlt className="skill-icon" />, level: '85%', category: 'tools' },
   { name: 'GitHub', icon: <FaGithub className="skill-icon" />, level: '85%', category: 'tools' },
   { name: 'npm', icon: <FaNpm className="skill-icon" />, level: '80%', category: 'tools' },
@@ -30,7 +25,6 @@ const skills = [
 
 const categories = [
   { id: 'frontend', name: 'Frontend' },
-  { id: 'backend', name: 'Backend' },
   { id: 'tools', name: 'Tools' },
   { id: 'design', name: 'Design' },
 ];
@@ -49,13 +43,8 @@ const Skills = () => {
     'TypeScript': 'text-blue-600',
     'React': 'text-cyan-400',
     'Redux': 'text-purple-500',
-    'CSS': 'text-cyan-500',
+    'Tailwind': 'text-cyan-500',
     'Bootstrap': 'text-purple-600',
-    'Sass': 'text-pink-500',
-    'Node.js': 'text-green-500',
-    'Express': 'text-gray-300',
-    'MongoDB': 'text-green-600',
-    'SQL': 'text-blue-400',
     'Git': 'text-orange-600',
     'GitHub': 'text-gray-300',
     'npm': 'text-red-500',

@@ -2,12 +2,18 @@ import { motion } from 'framer-motion';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import './Projects.css';
 
+// Import images
+import directoryImage from '../assets/directoryImage.webp';
+import webCalculator from '../assets/webCalculator.webp';
+import todoApp from '../assets/ToDo-app.png';
+import portfolioImg from '../assets/portfolio.png';
+
 const projects = [
   {
     title: 'Web AI Services',
     description: 'A modern web application for AI services directory built with React and Node.js. Features include service listings, search functionality, and responsive design.',
     tags: ['React', 'Node.js', 'MongoDB', 'Express'],
-    image: '/src/assets/directoryImage.webp',
+    image: directoryImage,
     github: 'https://github.com/AliHaider3820/web-ai-version02',
     demo: 'https://web-ai-version02.vercel.app/',
   },
@@ -15,7 +21,7 @@ const projects = [
     title: 'React Calculator',
     description: 'A fully functional calculator application built with React. Features include basic arithmetic operations, responsive design, and a clean user interface.',
     tags: ['React', 'JavaScript', 'CSS3'],
-    image: '/src/assets/webCalculator.webp',
+    image: webCalculator,
     github: 'https://github.com/AliHaider3820/calculator-react',
     demo: 'https://js-calculator-beige.vercel.app/',
   },
@@ -23,7 +29,7 @@ const projects = [
     title: 'Todo App',
     description: 'A task management application that allows users to add, edit, delete, and mark tasks as complete. Built with vanilla JavaScript.',
     tags: ['JavaScript', 'HTML5', 'CSS3'],
-    image: '/src/assets/ToDo-app.png',
+    image: todoApp,
     github: 'https://github.com/AliHaider3820/Todo-App-JS',
     demo: 'https://todo-app-js-wheat.vercel.app/',
   },
@@ -31,7 +37,7 @@ const projects = [
     title: 'Portfolio Website',
     description: 'A personal portfolio website built with React and Vite. Showcases projects, skills, and contact information in a modern, responsive design.',
     tags: ['React', 'Vite', 'Tailwind CSS', 'Framer Motion'],
-    image: '/src/assets/portfolio.png',
+    image: portfolioImg,
     github: 'https://github.com/AliHaider3820',
     demo: '#',
   },
